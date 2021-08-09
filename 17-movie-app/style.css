@@ -77,7 +77,8 @@ main {
     color: red;
 }
 .overview {
-    background-color: #fff;
+    background-color: rgba( 0,0,0,0.5)
+    color: #fff;
     padding: 2rem;
     position: absolute;
     left: 0;
@@ -85,8 +86,10 @@ main {
     right: 0;
     max-height: 100%;
     transform: translateY(101%);
-    transition: tranform 0.3s ease-in;
+    transition: transform 0.7s ease-in;
 }
 .movie:hover .overview {
-    transform: translateY(0);
+    transform: translateY(0%);
+    color: #fff;
+    text-shadow: 1px 1px 3px lightgreen;
 }
