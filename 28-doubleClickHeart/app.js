@@ -8,7 +8,7 @@ loveMe.addEventListener('click', (e) => {
     if (clickTime === 0) {
         clickTime = new Date().getTime()
     } else {
-        if ((new Date().getTime() - clickTime) < 800) {
+        if (new Date().getTime() - clickTime < 800) {
             createHeart(e)
             clickTime = 0
         } else {
@@ -21,6 +21,7 @@ const createHeart = (e) => {
     const heart = document.createElement('i')
     heart.classList.add('fas')
     heart.classList.add('fa-heart')
+    heart.style.color = 'lime'
 
     // get the position of the mouse
     const x = e.clientX
