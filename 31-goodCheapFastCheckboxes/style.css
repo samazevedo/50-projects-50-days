@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #c7aff6;
+    background-color: #241344;
+    color: white;
     font-family: 'Muli', sans-serif;
     display: flex;
     height: 100vh;
