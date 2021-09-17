@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box
+}
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    overflow:hidden;
+    height: 100vh;
+
+}
+.img-box {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+button {
+    
+    box-shadow: 1px 1px 10px #00000078;
+    background-color:#0F141817;
+    color:#fff;
+}
+.btn {
+    position: absolute;
+    width: 100px;
+    bottom:0;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btn:active {
+    focus: none;
+    transform: translateY(30%)
+}
+.btn:hover {
+    color: #181818;
+    background-color:#FFFFFF84;
+    
+}
+
+.btn#previous {
+    left: 10px;
+}
+.btn#next {
+    right: 10px;
+}
+.fadeimg {
+    animation: fadein 2s
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+}
