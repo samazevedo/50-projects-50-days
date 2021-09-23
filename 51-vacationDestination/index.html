@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Vacation Destination Wish List</title>
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1>Vacation Destination Wish List</h1>
+            <p>
+                Found exciting places to visit on your next vacation.
+                Use the from bellow to add them to your wishlist.
+            </p>
+        </header>
+        <div class="container">
+            <section id="form-section" class="form-section">
+                <form id="form">
+                    <label for="destination">Destination name</label>
+                    <input type="text" name="destination" id="destination" placeholder="Provide a name for the destination" required>
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Provide a location" required >
+                    <label for="photo">Photo</label>
+                    <input type="text" name="photo" id="photo" placeholder="Select a Photo of destination">
+                    <label for="description">Description</label>
+                    <textarea name="textarea" id="description" cols="10" rows="5" placeholder="Describe the destination"></textarea> 
+                    <button class="form-btn" id="form-btn" type="submit">Add to List</button>
+                </form>
+                <div id="wish-list" class="wish-list">
+                   
+                </div>
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
