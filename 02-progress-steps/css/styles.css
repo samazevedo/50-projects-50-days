@@ -4,19 +4,35 @@
     box-sizing: border-box;
 }
 :root {
-    --line-border-fill:#84ff00;
-    --line-border-empty:#e0e0e0;
+    --line-border-fill: #84ff00;
+    --line-border-empty: #e0e0e0;
+}
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 body {
-   background-color: #f6f7fb; 
-   font-family: 'Muli', sans-serif;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100vh;
-   overflow: hidden;
-   margin: 0;
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
 .container {
@@ -43,7 +59,7 @@ body {
     z-index: -1;
 }
 .progress {
-    background-color:var(--line-border-fill);
+    background-color: var(--line-border-fill);
     position: absolute;
     top: 50%;
     left: 0;
@@ -64,7 +80,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 3px solid var(--line-border-empty);
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 .circle.active {
     border-color: var(--line-border-fill);
@@ -73,12 +89,12 @@ body {
 .btn {
     background-color: var(--line-border-fill);
     color: #fff;
-    border-radius:6px ;
+    border-radius: 6px;
     cursor: pointer;
     font-family: inherit;
     padding: 8px 30px;
     margin: 5px;
-    font-size: 14px;   
+    font-size: 14px;
 }
 
 .btn:active {
@@ -89,5 +105,5 @@ body {
 }
 .btn:disabled {
     background-color: var(--line-border-empty);
-    cursor:not-allowed ;
+    cursor: not-allowed;
 }

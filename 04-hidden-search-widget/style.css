@@ -3,6 +3,22 @@
 * {
     box-sizing: border-box;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 body {
     background-image: linear-gradient(90deg, #7d5fff, #048995);
@@ -27,15 +43,15 @@ body {
     padding: 15px;
     height: 50px;
     width: 50px;
-    transition:  width 0.5s ease;
+    transition: width 0.5s ease;
 }
 
 .btn {
     background-color: #fff;
-    border:0;
+    border: 0;
     cursor: pointer;
     font-size: 24px;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     height: 50px;
@@ -43,8 +59,8 @@ body {
     transition: transform 0.5s ease;
 }
 
-.btn:focus, 
-.input:focus{
+.btn:focus,
+.input:focus {
     outline: none;
 }
 

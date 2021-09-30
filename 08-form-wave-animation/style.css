@@ -3,31 +3,47 @@
 * {
     box-sizing: border-box;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     background-color: #000;
     font-family: 'Muli', sans-serif;
-    color:#fff;
-    display:flex;
+    color: #fff;
+    display: flex;
     justify-content: center;
     overflow: hidden;
     margin: 0;
 }
 .container {
-    background-color:#4b3b7b;
-    padding:20px 40px;
-    align-self:center;
-    margin-top:200px;
+    background-color: #4b3b7b;
+    padding: 20px 40px;
+    align-self: center;
+    margin-top: 200px;
     border: 1px solid #eee;
     border-radius: 10px;
 }
 .container h1 {
-   text-align: center;
-   margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .container a {
     text-decoration: none;
-    color:  #f4ff28;
+    color: #f4ff28;
 }
 .form-control {
     position: relative;
@@ -35,18 +51,18 @@ body {
     width: 300px;
 }
 .form-control input {
-    background-color:  transparent;
+    background-color: transparent;
     border: 0;
     border-bottom: 2px #fff solid;
-    display:block;
+    display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
     color: #fff;
 }
-.form-control input:focus, 
+.form-control input:focus,
 .form-control input:valid {
-    border-color:  #819BE3;
+    border-color: #819be3;
 }
 
 .form-control input:focus,
@@ -57,12 +73,12 @@ body {
 .btn {
     cursor: pointer;
     display: inline-block;
-    width:100%;
-    background-color: #819BE3;
+    width: 100%;
+    background-color: #819be3;
     padding: 15px;
     font-family: inherit;
     font-size: 16px;
-    border:0;
+    border: 0;
     border-radius: 10px;
 }
 
@@ -88,7 +104,6 @@ body {
 
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-    color:  #819BE3;
+    color: #819be3;
     transform: translateY(-30px);
-
 }

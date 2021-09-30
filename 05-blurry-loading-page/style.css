@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     font-family: 'Zen Loop', sans-serif;
     display: flex;
@@ -19,9 +35,9 @@ body {
     top: -30px;
     left: -30px;
     width: calc(100vw + 60px);
-    height:calc(100vh + 60px);
+    height: calc(100vh + 60px);
     z-index: -1;
-    filter: blur(70px)
+    filter: blur(70px);
 }
 .loading-text {
     font-size: 50px;

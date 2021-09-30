@@ -12,6 +12,23 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-color: #bebebe;
+}
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .container {
@@ -44,22 +61,22 @@ body {
 }
 
 .panel.active h3 {
-    opacity:1;
+    opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media(max-width:480px) {
+@media (max-width: 480px) {
     .container {
-        width:100vw;
+        width: 100vw;
     }
     .panel:nth-of-type(3),
-    .panel:nth-of-type(4){
+    .panel:nth-of-type(4) {
         display: none;
     }
-    .panel:nth-of-type(5){
+    .panel:nth-of-type(5) {
         display: none;
     }
-    .panel:nth-of-type(6){
+    .panel:nth-of-type(6) {
         display: none;
     }
 }

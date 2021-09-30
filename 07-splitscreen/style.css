@@ -3,18 +3,34 @@
 * {
     box-sizing: border-box;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     overflow: hidden;
-    margin:0;
+    margin: 0;
 }
 
 :root {
-    --left-bg-color: rgba(87,84,236,0.7);
-    --right-bg-color: rgba(43,43,43,0.8);
-    --left-btn-hover-color: rgba(87,84,236,1);
-    --right-btn-hover-color: rgba(28,122,28,1);
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-btn-hover-color: rgba(87, 84, 236, 1);
+    --right-btn-hover-color: rgba(28, 122, 28, 1);
     --hover-width: 75%;
     --other-width: 25%;
     --speed: 1000ms;
@@ -31,7 +47,7 @@ h1 {
 }
 
 .btn {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -57,7 +73,7 @@ h1 {
     position: absolute;
     width: 50%;
     height: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 .split.left {
     left: 0;
@@ -85,8 +101,11 @@ h1 {
     height: 100%;
     background-color: var(--right-bg-color);
 }
-.split.right, .split.left, .split.right::before, .split.left::before {
-    transition:all var(--speed) ease-in-out;
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+    transition: all var(--speed) ease-in-out;
 }
 
 .split.left .btn:hover {
@@ -98,20 +117,20 @@ h1 {
     border-color: var(--right-btn-hover-color);
 }
 .hover-left .left {
-    width: var(--hover-width)
+    width: var(--hover-width);
 }
 .hover-left .right {
-    width: var(--other-width)
+    width: var(--other-width);
 }
 
 .hover-right .right {
-    width: var(--hover-width)
+    width: var(--hover-width);
 }
 .hover-right .left {
-    width: var(--other-width)
+    width: var(--other-width);
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 2rem;
     }
