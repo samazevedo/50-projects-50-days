@@ -3,6 +3,22 @@
 * {
     box-sizing: border-box;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     background-color: #eee;
     font-family: 'Muli', sans-serif;
@@ -10,7 +26,7 @@ body {
 
 h1 {
     margin: 50px 0 30px;
-    text-align:center;
+    text-align: center;
 }
 .faq-container {
     max-width: 600px;
@@ -28,25 +44,25 @@ h1 {
 }
 .faq.active {
     background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1),0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 .faq.active::before,
-.faq.active::after{
+.faq.active::after {
     content: '\f075';
     font-family: 'Font Awesome 5 Free';
     color: #2ecc71;
     font-size: 7rem;
     position: absolute;
     opacity: 0.2;
-    top:20px;
-    left:20px;
+    top: 20px;
+    left: 20px;
     z-index: 0;
 }
 
 .faq.active::before {
     color: #3498db;
     top: -10px;
-    left:-30px;
+    left: -30px;
     transform: rotateY(180deg);
 }
 .faq-title {
@@ -57,13 +73,13 @@ h1 {
     margin: 30px 0 0;
 }
 .faq.active .faq-text {
-    display:block;
+    display: block;
 }
 .faq-toggle {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;

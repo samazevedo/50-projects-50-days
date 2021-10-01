@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:300&display-swap  ");
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display-swap  ');
 
 * {
     box-sizing: border-box;
@@ -20,6 +20,24 @@ html.dark {
     background-color: #111;
     color: var(--primary-color);
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 1px 2px;
+    font-weight: 900;
+    font-size: 10px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 body {
     font-family: 'Heebo', sans-serif;
@@ -36,34 +54,34 @@ body {
     border: 0;
     border-radius: 5px;
     position: absolute;
-    top:50px;
+    top: 50px;
 }
 .toggle:focus {
     outline: none;
 }
 .clock-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 .clock {
-    position:relative;
+    position: relative;
     width: 200px;
     height: 200px;
 }
 .needle {
     background-color: var(--primary-color);
-    position:absolute;
+    position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     height: 65px;
     width: 3px;
     transform-origin: bottom center;
     transition: all 0.3s ease-in;
 }
 .needle.hour {
-    transform: translate(-50%, -100%) rotate(0deg)
+    transform: translate(-50%, -100%) rotate(0deg);
 }
 .needle.minute {
     transform: translate(-50%, -100%) rotate(0deg);
@@ -72,15 +90,15 @@ body {
 .needle.second {
     transform: translate(-50%, -100%) rotate(0deg);
     height: 100px;
-    background-color: #FF670F; 
+    background-color: #ff670f;
 }
 .center-point {
-    background-color:#FF670F;
+    background-color: #ff670f;
     width: 10px;
     height: 10px;
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
@@ -90,8 +108,8 @@ body {
     width: 5px;
     height: 5px;
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
@@ -100,7 +118,7 @@ body {
     font-size: 60px;
 }
 .date {
-    color: #FF6B6B;
+    color: #ff6b6b;
     font-size: 14px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
@@ -110,14 +128,11 @@ body {
     color: var(--secondary-color);
     border-radius: 50%;
     width: 18px;
-    height:18px;
-    display:inline-flex;
+    height: 18px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 18px;
     transition: all 0.5s ease-in;
     font-size: 12px;
-
-
-
 }

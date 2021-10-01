@@ -3,6 +3,25 @@
 * {
     box-sizing: border-box;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 1px 2px;
+    font-weight: 900;
+    font-size: 10px;
+    max-height: 15px;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     background-color: #240a4d;
     font-family: 'Roboto', sans-serif;

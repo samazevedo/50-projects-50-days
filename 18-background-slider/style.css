@@ -3,10 +3,27 @@
 * {
     box-sizing: border-box;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-weight: 900;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     background-color: #efedd6;
     font-family: 'Roboto', sans-serif;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -19,17 +36,17 @@ body {
 }
 
 body::before {
-    content:'';
+    content: '';
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 .slider-container {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0  3px 6px rgba(0,0,0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     height: 70vh;
     width: 70vw;
     position: relative;
@@ -61,7 +78,7 @@ body::before {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    transition:color 0.5s ease-in;
+    transition: color 0.5s ease-in;
 }
 .arrow:hover {
     color: orange;
@@ -70,8 +87,8 @@ body::before {
     outline: 0;
 }
 .left-arrow {
-    left: calc(15vw - 65px)
+    left: calc(15vw - 65px);
 }
 .right-arrow {
-    right: calc(15vw - 65px)
+    right: calc(15vw - 65px);
 }

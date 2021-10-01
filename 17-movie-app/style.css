@@ -8,6 +8,23 @@
     --primary-color: #22254b;
     --secondary-color:#373b69;
 }
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #605e5e;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-weight: 900;
+}
+.back:hover {
+    background-color: #bcc0bd;
+}
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
