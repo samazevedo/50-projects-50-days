@@ -1,1 +1,1 @@
-# 50-projects-50-days
+# Projects using JavaScript HTML and CSS
