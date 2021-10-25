@@ -1,5 +1,6 @@
 const container = document.getElementById('container')
-const pokemon_count = 100
+const pokemon_count = 40 // Change this to the number of pokemon you want to fetch from the API (max: 964)
+
 const colors = {
     normal: '#A8A878',
     fire: '#F08030',
